@@ -1,0 +1,5 @@
+{
+  "questions": [
+    { "title": "are dogs better than cats ?", "isTrue": false, "answer": "Yes" }
+  ]
+}
