@@ -201,14 +201,31 @@ var facts = [
 	}
 ];
 
-const getRandomItem = () => Math.floor(Math.random() * facts.length);
+const usedNumbers = {};
+
+//get a non repeating random num
+const getRandomNumber = (amount) => {
+  //return null if we reached the end
+  if (amount === Object.keys(usedNumbers).length) {
+    return null;
+  }
+
+  let value;
+
+  //first check if value is null then put random num
+  //then check if that random number is in the object or not
+  while (value == null || usedNumbers[value]) {
+    value = Math.floor(Math.random() * amount);
+  }
+
+  usedNumbers[value] = true;
+
+  return value;
+};
 
 const getRandomFact = () => {
-  const randNum = getRandomItem();
-
-  if (facts.includes(randNum)) ; else {
-    return facts[randNum];
-  }
+  const number = getRandomNumber(facts.length);
+  return facts[number];
 };
 
 // for (let i = 0; i < facts.length; i++) {
