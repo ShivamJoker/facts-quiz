@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 var facts = [
 	{
 		title: "Donald Duck’s middle name is Fauntelroy",
@@ -213,6 +215,8 @@ const getRandomFact = () => {
   }
 };
 
-for (let i = 0; i < facts.length; i++) {
-  console.log(i, getRandomFact());
-}
+// for (let i = 0; i < facts.length; i++) {
+//   console.log(i, getRandomFact());
+// }
+
+exports.getRandomFact = getRandomFact;

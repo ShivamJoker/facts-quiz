@@ -4,7 +4,7 @@ const getRandomItem = () => Math.floor(Math.random() * facts.length);
 
 const previousNums = [];
 
-const getRandomFact = () => {
+export const getRandomFact = () => {
   const randNum = getRandomItem();
 
   if (facts.includes(randNum)) {
@@ -15,6 +15,6 @@ const getRandomFact = () => {
   }
 };
 
-for (let i = 0; i < facts.length; i++) {
-  console.log(i, getRandomFact());
-}
+// for (let i = 0; i < facts.length; i++) {
+//   console.log(i, getRandomFact());
+// }
