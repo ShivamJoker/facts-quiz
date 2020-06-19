@@ -27,6 +27,10 @@ export const getRandomFact = () => {
   return facts[number];
 };
 
-// for (let i = 0; i < facts.length; i++) {
-//   console.log(i, getRandomFact());
-// }
+export const getAllFacts = () => {
+  return facts;
+};
+
+export const getFactsLength = () => {
+  return facts.length()
+};

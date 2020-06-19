@@ -234,10 +234,16 @@
     return facts[number];
   };
 
-  // for (let i = 0; i < facts.length; i++) {
-  //   console.log(i, getRandomFact());
-  // }
+  const getAllFacts = () => {
+    return facts;
+  };
 
+  const getFactsLength = () => {
+    return facts.length()
+  };
+
+  exports.getAllFacts = getAllFacts;
+  exports.getFactsLength = getFactsLength;
   exports.getRandomFact = getRandomFact;
 
   Object.defineProperty(exports, '__esModule', { value: true });
