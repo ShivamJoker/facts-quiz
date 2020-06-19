@@ -1,4 +1,5 @@
 # Facts Quiz
+### A collection of facts and it's truth availabe in JSON and as JS library
 
 # How to install ?
 
