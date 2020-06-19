@@ -15,7 +15,7 @@ export default {
       format: "esm",
     },
     {
-      file: `${dist}/factsquiz.js`,
+      file: `${dist}/factsquiz.min.js`,
       format: "iife",
       name: "fq",
       plugins: [terser()],
