@@ -1,6 +1,6 @@
 {
   "name": "facts-quiz",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of instresting facts",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
