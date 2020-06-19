@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.FactsQuiz = {}));
+  (global = global || self, factory(global.fq = {}));
 }(this, (function (exports) { 'use strict';
 
   var facts = [
