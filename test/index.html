@@ -42,7 +42,7 @@
             // console.log(i, FactsQuiz.getRandomFact());
             const fact = FactsQuiz.getRandomFact();
             console.log(fact)
-            factsTitle += (`<li>${fact.title} ${fact.isTrue ? '✔ ' : '⤫'}</li>`)
+            factsTitle += (`<li>${fact.title}  ${fact.isTrue ? '✔ ' : '⤫'}</li>`)
         }
         factsEl.innerHTML = factsTitle
     </script>

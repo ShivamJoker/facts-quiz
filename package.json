@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "deploy": "gh-pages -d test"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
+    "gh-pages": "^3.0.0",
     "rollup": "^2.17.0"
   }
 }
