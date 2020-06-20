@@ -1,6 +1,8 @@
 # Facts Quiz
 ### A collection of facts and it's truth availabe in JSON and as JS library
 
+[See all the facts](https://shivamjoker.github.io/facts-quiz/)
+
 # How to install ?
 
 With Script tag
@@ -15,7 +17,10 @@ npm i facts-quiz
 
 # Using the library
 ```js
-import fq from "facts-quiz"
+import fq from "facts-quiz";
+
+// or import a particular function
+import { getRandomFact } from "facts=quiz";
 
 // get a random non repeating fact
 fq.getRandomFact()
